@@ -101,3 +101,65 @@ select.addEventListener('change', () => {
     });
   });
 /*Selector has*/
+/*Input*/
+const asunto = document.querySelector('#subject');
+const cc = document.querySelector('#cc');
+const cuerpo = document.querySelector('#body');
+
+console.log(asunto);
+console.log(cc);
+console.log(cuerpo);
+
+asunto.addEventListener('blur', validarAsunto);
+cc.addEventListener('blur', validarCC);
+cuerpo.addEventListener('blur', validarCuerpo);
+
+function validarAsunto() {
+    const valor = asunto.value;
+    if(valor === ""){
+        asunto.classList.add("no-valido");
+        asunto.classList.remove("valido");
+        const error = document.querySelector('#asunto-error');
+        error.style.display = 'block';
+    }else{
+        asunto.classList.add("valido");
+        asunto.classList.remove("no-valido");
+        const error = document.querySelector('#asunto-error');
+        error.style.display = 'none';
+    }
+}
+
+function validarCC() {
+    const valor = cc.value;
+    const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (valor === "" || !email.test(valor)) {
+      cc.classList.add("no-valido");
+      cc.classList.remove("valido");
+      const error = document.querySelector("#cc-error");
+      error.style.display = "block";
+    } else {
+      cc.classList.add("valido");
+      cc.classList.remove("no-valido");
+      const error = document.querySelector("#cc-error");
+      error.style.display = "none";
+    }
+  }
+  
+
+
+function validarCuerpo() {
+    const valor = cuerpo.value;
+    if(valor === ""){
+        cuerpo.classList.add("no-valido");
+        cuerpo.classList.remove("valido");
+        const error = document.querySelector('#cuerpo-error');
+        error.style.display = 'block';
+    }else{
+        cuerpo.classList.add("valido");
+        cuerpo.classList.remove("no-valido");
+        const error = document.querySelector('#cuerpo-error');
+        error.style.display = 'none';
+    }
+
+}
+/*Input*/
