@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio personal de Marcelo Herce">
+  <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos">
+  <meta name="language" content="ES">
+  <meta name="author" content="marcelo.herce@vedruna.es">
+  <meta name="robots" content="index,follow">
+  <meta name="revised" content="Tuesday, February 11th, 2023, 01:00pm">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/line-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="images/maxresdefault.jpg">
+  <script defer src="js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <title>Porfolio</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container flex-lg-column">
+      <a class="navbar-brand mx-lg-auto" href="#">
+        <span class="h3 fw-bold d-block d-lg-none">Marcelo</span>
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+          <li class="nav-item ">
+            <a class="nav-link"  href="#sobreMi">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link"  href="#curriculum">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /navbar -->
+  <!-- main -->
+  <main id="content-wrapper">
+    <!-- Sobre mi -->
+    <section id="sobreMi" class="f-height px-lg-5 pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-1">Soy <span class="rotate">Marcelo Herce</span> de Sevilla España</h1>
+            <p>Estudiante de DAW en Vedruna</p>
+            <div class="color-buttons">
+              <button class="color-btn" id="color1" data-color="morado"></button>
+              <button class="color-btn" id="color2" data-color="verde"></button>
+              <button class="color-btn" id="color3" data-color="rojo"></button>
+              <button class="color-btn" id="reset" data-color="reset"><i class="las la-undo"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <img src="images/120047392.png" alt="Avatar" class="levitar rounded-circle">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Sobre mi-->
+    <!--Curriculum-->
+    <!-- Curriculum -->
+    <section id="curriculum" class="f-height px-lg-5 pt-3 pb-3">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-8">
+            <h6>Curriculum</h6>
+            <h1>Curriculum</h1>
+          </div>
+        </div>
+        <!-- Educación -->
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="iconbox rounded-3">
+                <i class="las la-school"></i>
+              </div>
+              <h4 class="mt-2">Educacion</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <h5>DAW en Vedruna</h5>
+                  <p>2022-2023</p>
+                </li>
+                <li>
+                  <h5>Grado en Informática</h5>
+                  <p>2022-2023</p>
+                </li>
+                <li>
+                  <h5>Idiomas</h5>
+                  <p>Español (nativo), Inglés (intermedio)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="iconbox rounded-3">
+                <i class="las la-briefcase"></i>
+              </div>
+              <h4 class="mt-2">Experiencia laboral</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <h5>Desarrollador Web</h5>
+                  <p>Empresa ABC</p>
+                  <p>2022-Presente</p>
+                </li>
+                <li>
+                  <h5>Prácticas de verano</h5>
+                  <p>Empresa XYZ</p>
+                  <p>2019-2020</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="iconbox rounded-3">
+                <i class="las la-certificate"></i>
+              </div>
+              <h4 class="mt-2">Habilidades</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <h5>Lenguajes de programación</h5>
+                  <p>Java, JavaScript, HTML, CSS</p>
+                </li>
+                <li>
+                  <h5>Herramientas</h5>
+                  <p>Visual Studio Code, Git, MySQL, IntelliJ</p>
+                </li>
+                <li>
+                  <h5>Estudiando</h5>
+                  <p>PHP, Python, MongoDB</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--/Curriculum-->
+    <section id="services" class="f-height px-lg-5 pt-3 pb-3">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-8">
+            <h6>Servicios</h6>
+            <h1>Servicios que ofrezco</h1>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="iconbox rounded-3">
+                <i class="lab la-java"></i>
+              </div>
+              <h4 class="mt-2">Java</h4>
+              <p>Programo en Java, un lenguaje versátil y potente, para crear aplicaciones y soluciones informáticas que cumplan con las necesidades del cliente. </p>
+              <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="d-flex gap-3">
+                <div class="iconbox rounded-3">
+                  <i class="lab la-css3"></i>
+                </div>
+                <div class="iconbox rounded-3">
+                  <i class="lab la-html5"></i>
+                </div>
+              </div>
+              <h4 class="mt-2">HTML5 y CSS3</h4>
+              <p>Creación de páginas web con HTML y CSS. Diseño y desarrollo de sitios web personalizados y adaptados a las necesidades de cada proyecto.</p>
+              <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service p-4 bg-card rounded-3 effect-shadow">
+              <div class="iconbox rounded-3">
+                <i class="lab la-js-square"></i>
+              </div>
+              <h4 class="mt-2">Javascript</h4>
+              <p>Implementación de funciones, eventos y manipulación del DOM para crear experiencias de usuario dinámicas e innovadoras.</p>
+              <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+    <!--Proyectos-->
+    <section id="work" class="f-height px-lg-5 pt-3 pb-3">
+      <div class="container">
+
+        <div class="row pb-4">
+          <div class="col-lg-8">
+            <h6>Proyectos</h6>
+            <h1>Mis ultimos proyectos</h1>
+          </div>
+        </div>
+
+        <!--Selector has-->
+        <form>
+          <select name="modulo" id="modulo" class="form-control">
+              <option value="all">All</option>
+              <option value="java">Java</option>
+              <option value="javascript">javascript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+          </select>
+        </form>
+        <!--/Selector has-->
+
+        <div class="row" id="filtrar">
+          <div class="col-md-6 gy-4 "  data-categoria="html javascript css">
+            <div class="custom-card rounded-3 effect-shadow">
+              <div class="custom-card-img rounded-3">
+                <img src="images/Captura de pantalla 2023-03-10 222515.png" alt="ToGoodToAdopt">
+              </div>
+              <div class="custom-card-content p-4">
+                <h4><span class="css html javascript">Portfolio</span></h4>
+                <p>Portfolio personal</p>
+                <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 gy-4 " data-categoria="javascript css html">
+            <div class="custom-card rounded-3 effect-shadow" >
+              <div class="custom-card-img rounded-3">
+                <img src="images/api-football.png" alt="ToGoodToAdopt">
+              </div>
+              <div class="custom-card-content p-4">
+                <h4><span class="css html javascript">API-Football</span></h4>
+                <p>Proyecto 360 de sistemas, sin saber chino</p>
+                <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 gy-4 " data-categoria="java">
+            <div class="custom-card rounded-3 effect-shadow" >
+              <div class="custom-card-img rounded-3">
+                <img src="images/Captura de pantalla java.png" alt="ToGoodToAdopt">
+              </div>
+              <div class="custom-card-content p-4">
+                <h4><span class="java">Corre Timmy</span></h4>
+                <p>Juego de consola de Java</p>
+                <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 gy-4 " data-categoria="html css">
+            <div class="custom-card rounded-3 effect-shadow">
+              <div class="custom-card-img rounded-3">
+                <img src="images/togoodtoadopt-logo (1).png" alt="ToGoodToAdopt">
+              </div>
+              <div class="custom-card-content p-4">
+                <h4><span class=" css mx-auto">ToGoodToAdopt</span></h4>
+                <p>Proyecto de entornos y marcas</p>
+                <a href="https://youtu.be/jzwMjOl8Iyo?t=5" class="custom-link">Leer mas</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--Proyectos-->
+    <!--Contact-->
+    <section id="contact" class="f-height px-lg-5 pt-3 pb-3">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-8">
+            <h6>Contacto</h6>
+            <h1>Rellena el formulario para contrataciones</h1>
+          </div>
+        </div>
+        <form action="mailto:marcelo.herce@vedruna.es" method="get" class="mt-2 mx-auto" id="contac-form"> <!-- Form -->
+          <fieldset class="form-row reset p-4 align-items-center border border-primary ">
+              <legend class="reset text-light border border-primary px-2 py-1">Contacta conmigo</legend>
+              
+              <div class="form-group row g-3 mt-1 mx-auto">
+                  <label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
+                  <div class="col-sm-10">
+                      <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                      <span id="asunto-error" class="error-message" style="display:none;">Este campo es obligatorio</span>
+                  </div>
+              </div>
+
+              <div class="form-group row g-3 mt-1 mx-auto">
+                  <label for="cc" class="col-sm-2 col-form-label text-primary">CC:</label>
+                  <div class="col input-group mb-2">
+                      <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                      </div>
+                      <div class="col-sm-10">
+                        <input type="email" id="cc" class="form-control text-info" name="cc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                        <span id="cc-error" class="error-message" style="display:none;">Este campo es obligatorio</span>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="row g-3 mt-2 mx-auto">
+                  <label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
+                  <textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40"
+                  required></textarea>
+                  <span id="cuerpo-error" class="error-message" style="display:none;">Este campo es obligatorio</span>
+              </div>
+              
+              <div class="row g-3 mt-2 w-25 mx-auto">
+                  <input id="sendBttn" class="btn btn-primary btn-lg" type="submit" value="Send" />
+              </div>
+          </fieldset>
+      </form>
+      </div>
+    </section>
+    <!--Contact-->
+
+
+  </main>
+  <!-- /main -->
+
+</body>
+
+</html>

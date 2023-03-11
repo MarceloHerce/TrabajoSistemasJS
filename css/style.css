@@ -1,0 +1,223 @@
+:root {
+    --color-body: #c0e2d7;
+--color-heading: #f2e1c2;
+--color-base: #394a6d;
+--color-base2: #2b3652;
+--color-brand: #f5a49b;
+--color-brand2: #ff817c;
+    --sidebar-wight: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--color-brand);
+}
+.custom-link{
+    font-weight: 700;
+    position:relative
+}
+.custom-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.custom-link:hover::after{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+/*altura*/
+.f-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+
+/*navbar*/
+.navbar {
+    background-color: var(--color-base);
+}
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eef3db;
+}
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-wight);
+        background-color: linear-gradient(rgba(15, 197, 221, 1),rgba(15, 197, 221,1));
+        background-size: cover;
+        background-position: center;
+
+    }
+    .navbar-brand img {
+        border: 1px solid var(--color-brand);
+    }
+    /*main*/
+    #content-wrapper{
+        padding-left: var(--sidebar-wight);
+    }
+    
+}
+@media (min-width:1025px){
+    .rotate{
+        display: inline-block;
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+        color: wheat;
+    }
+    .rotate:hover{
+        transform:  rotateY(360deg) rotateX(360deg);
+        transition: 0.9s;
+    
+    }
+}
+.rotate{
+    color: wheat;
+}
+.navbar-toggler{
+    background-color: #eef3db;
+}
+.navbar .nav-link:focus{
+    color: var(--color-brand2);
+}
+
+  .bg-card{
+    background-color: var(--color-base);
+  }
+
+
+
+.effect-shadow{
+    transition: all o.5s;
+}
+.effect-shadow:hover{
+    box-shadow: -3px 3px 0 0 var(--color-brand);
+}
+.iconbox{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+}
+
+.custom-card .custom-card-img{
+    overflow: hidden;
+}
+.custom-link .custom-card-img img{
+    transition: all 0.4 ease ;
+}
+.custom-card:hover .custom-card-img img{
+    transform: scale(1.1);
+}
+.custom-card{
+    background-color: var(--color-base);
+}
+
+#contac-form{
+    background-color: var(--color-base);
+}
+
+/*Selector has*/
+form:has(select > option[value="java"]:checked) + .row .custom-card .custom-card-content h4:has(.java),
+form:has(select > option[value="javascript"]:checked) + .row .custom-card .custom-card-content h4:has(.javascript),
+form:has(select > option[value="html"]:checked) + .row .custom-card .custom-card-content h4:has(.html),
+form:has(select > option[value="css"]:checked) + .row .custom-card .custom-card-content h4:has(.css) {
+    animation: escala 2s;
+}
+
+
+@keyframes escala {
+    50% {
+        transform: scale(1.5);
+    }
+}
+/*Selector has*/
+/*Levitar*/
+.levitar {
+    animation: levitar 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes levitar {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+/*Levitar*/
+/*colores*/
+.color-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .color-btn {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid black;
+  }
+  .color-btn:focus{
+    animation: 1s move-s;
+  }
+  #color1{
+      background-color: #4c2a73;
+    }
+    #color2{
+      background-color: #3c4f3d;
+  }
+  #color3{
+    background-color: #6f1d1f;
+  }
+  @keyframes move-s {
+    50% {transform:translateY(1rem)}
+  }
+/*colores*/
+/*Vlidar contacto*/
+.error-message{
+    color: var(--color-brand2)
+}
+.valido{
+    border: 0.25rem solid;
+    border-color: green;
+}
+.no-valido{
+    border: 0.25rem solid;
+    border-color: red;
+}
+/*Vlidar contacto*/
