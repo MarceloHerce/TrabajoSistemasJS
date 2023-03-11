@@ -80,3 +80,24 @@ function asignarColor(cssvar, variable) {
   }
 }
 /*colores*/
+/*Selector has*/
+const select = document.getElementById('modulo');
+const container = document.querySelector('#filtrar');
+const cards = document.querySelectorAll('[data-categoria]');
+
+console.log(select);
+console.log(container);
+console.log(cards);
+
+select.addEventListener('change', () => {
+    const valorSelect = select.value;
+    cards.forEach((card) => {
+      const categorias = card.dataset.categoria.split(' ');
+      if (valorSelect === 'all' || categorias.includes(valorSelect)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+/*Selector has*/
